@@ -3,7 +3,7 @@
 .. _hidden: http://sphinx-doc.org/markup/toctree.html
 
 ******************
-Julia Sphinx Theme
+Cobra Sphinx Theme
 ******************
 
 .. contents:: 
@@ -18,17 +18,17 @@ Download the package or add it to your ``requirements.txt`` file:
 
 .. code:: bash
 
-    $ pip install sphinx_julia_theme
+    $ pip install sphinx_cobra_theme
 
 In your ``conf.py`` file:
 
 .. code:: python
 
-    import sphinx_julia_theme
+    import sphinx_cobra_theme
 
-    html_theme = "sphinx_julia_theme"
+    html_theme = "sphinx_cobra_theme"
 
-    html_theme_path = [sphinx_julia_theme.get_html_theme_path()]
+    html_theme_path = [sphinx_cobra_theme.get_html_theme_path()]
 
 
 Configuration
@@ -39,7 +39,7 @@ You can configure different parts of the theme.
 Project-wide configuration
 --------------------------
 
-The theme's project-wide options are defined in the ``sphinx_julia_theme/theme.conf``
+The theme's project-wide options are defined in the ``sphinx_cobra_theme/theme.conf``
 file of this repository, and can be defined in your project's ``conf.py`` via
 ``html_theme_options``. For example:
 

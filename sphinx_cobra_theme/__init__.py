@@ -1,7 +1,7 @@
-"""Sphinx Julia theme."""
+"""Sphinx Cobra theme."""
 import os
 
-__version__ = '0.0.2'
+__version__ = '0.0.1'
 __version_full__ = __version__
 
 

@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
-"""`sphinx_julia_theme`.
+"""`sphinx_cobra_theme`.
 
-.. _github: https://www.github.com/syarra/sphinx_rtd_theme
 
 """
 from setuptools import setup
-from sphinx_julia_theme import __version__
+from sphinx_cobra_theme import __version__
 
 
 setup(
-    name='sphinx_julia_theme',
+    name='sphinx_cobra_theme',
     version=__version__,
-    url='https://github.com/syarra/sphinx_julia_theme/',
+    url='https://github.com/uni-lu/sphinx_cobra_theme/',
     license='MIT',
     author='Sylvain Arreckx',
     author_email='sylvain.arreckx@gmail.com',
-    description='Julia theme for Sphinx based on ReadTheDocs theme.',
+    description='Cobra theme for Sphinx based on ReadTheDocs theme.',
     long_description=open('README.rst').read(),
     zip_safe=False,
-    packages=['sphinx_julia_theme'],
+    packages=['sphinx_cobra_theme'],
     include_package_data=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
