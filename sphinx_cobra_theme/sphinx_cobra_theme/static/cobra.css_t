@@ -6007,7 +6007,8 @@ footer span.commit .rst-content tt,
 .rst-content blockquote {
     margin-left: 24px;
     line-height: 24px;
-    margin-bottom: 24px
+    margin-bottom: 6px;
+    padding: 0px 20px 10px 20px;
 }
 
 .rst-content .note .last,
@@ -6272,7 +6273,7 @@ a .rst-content code {
 .rst-content dl table,
 .rst-content dl ul,
 .rst-content dl ol {
-    margin-bottom: 12px !important
+    margin-bottom: 6px !important
 }
 
 .rst-content dl dd {
