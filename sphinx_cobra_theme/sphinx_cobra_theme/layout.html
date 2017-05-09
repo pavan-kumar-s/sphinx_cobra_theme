@@ -23,6 +23,9 @@
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
   {% endif %}
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   {# CSS #}
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
@@ -92,9 +95,9 @@
           {% block sidebartitle %}
 
           {% if logo and theme_logo_only %}
-            <a href="{{ pathto(master_doc) }}">
+            <a href="{{ pathto('index') }}">
           {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+            <a href="{{ pathto('index') }}" class="icon icon-home"> {{ project }}
           {% endif %}
 
           {% if logo %}
@@ -124,6 +127,9 @@
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
             {%- if display_toc %}
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="{{ pathto('index') }}">The COBRA Toolbox</a></li>
+              </ul>
               {{ toc }}
             {%- endif %}
           {% endblock %}
@@ -137,7 +143,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         {% block mobile_nav %}
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+          <a href="{{ pathto('index') }}">{{ project }}</a>
         {% endblock %}
       </nav>
 
