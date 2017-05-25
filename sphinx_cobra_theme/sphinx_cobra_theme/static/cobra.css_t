@@ -6,8 +6,8 @@
 
 /* redefine the bootstrap affix class for scrolling of side bar */
 .affix{
-    position: relative;
-    height: 130%;
+    position: static;
+    overflow-y: scroll;
 }
 
 article,
