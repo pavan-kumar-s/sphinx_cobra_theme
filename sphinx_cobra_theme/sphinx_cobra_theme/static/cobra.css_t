@@ -23,6 +23,18 @@ ul.metro li.color_class4 a.tile { background-color: #829E3C; border-radius: 50%;
     box-sizing: border-box
 }
 
+/* formatting of main round image */
+.avatar {
+    width: 280px;
+    margin: 10px;
+    border-offset: 15px;
+    border:1px solid #dddddd;
+    border-radius: 50%;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
 /* redefine the bootstrap affix class for scrolling of side bar */
 .affix{
     position: static;
