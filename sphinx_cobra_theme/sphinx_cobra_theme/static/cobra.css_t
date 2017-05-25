@@ -4,6 +4,12 @@
     box-sizing: border-box
 }
 
+/* redefine the bootstrap affix class for scrolling of side bar */
+.affix{
+    position: relative;
+    height: 130%;
+}
+
 article,
 aside,
 details,
