@@ -81,7 +81,9 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
-
+  <link href="{{ pathto('_static/css/easy-autocomplete.min.css', 1) }}" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="{{ pathto('_static/js/jquery.easy-autocomplete.min.js', 1) }}" type="text/javascript" ></script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -103,7 +105,7 @@
 
           {% if logo %}
             {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
-            <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" />
+            <img src="https://prince.lcsb.uni.lu/img/logos/logo.png" class="logo" />
           {% endif %}
           </a>
           <h1>{{ project }}</h1>
