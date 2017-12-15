@@ -21,7 +21,7 @@
             type: "links",
             fields: {
                 link: function(item) {
-                    return "{{ pathto('_static') }}/../" + item.website_url
+                    return "{{ pathto('_static', 1) }}/../" + item.website_url
                 },
             }
         },
