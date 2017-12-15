@@ -12,9 +12,16 @@
 		getValue: "name",
 
 		list: {
+            onKeyEnterEvent: function(item) {
+                    return "_static/../" + item.website_url
+            },
+            maxNumberOfElements: 10,
 			match: {
 					enabled: true,
-			}
+			},
+            sort: {
+			    enabled: true
+		    }
 		},
 
         template: {
