@@ -23,6 +23,8 @@
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
   {% endif %}
 
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="{{ pathto('_static/js/jquery.easy-autocomplete.min.js', 1) }}" type="text/javascript" ></script>
 
   {# CSS #}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -190,8 +192,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="{{ pathto('_static/js/jquery.easy-autocomplete.min.js', 1) }}" type="text/javascript" ></script>
 
   {# RTD hosts this file, so just load on non RTD builds #}
   {% if not READTHEDOCS %}
