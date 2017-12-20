@@ -23,11 +23,11 @@
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
   {% endif %}
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   {# CSS #}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href="{{ pathto('_static/css/easy-autocomplete.min.css', 1) }}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   {# OPENSEARCH #}
@@ -81,9 +81,6 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
-  <link href="{{ pathto('_static/css/easy-autocomplete.min.css', 1) }}" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="{{ pathto('_static/js/jquery.easy-autocomplete.min.js', 1) }}" type="text/javascript" ></script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -184,11 +181,17 @@
             SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
         };
     </script>
+
     {%- for scriptfile in script_files %}
-      <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
 
   {% endif %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="{{ pathto('_static/js/jquery.easy-autocomplete.min.js', 1) }}" type="text/javascript" ></script>
 
   {# RTD hosts this file, so just load on non RTD builds #}
   {% if not READTHEDOCS %}
