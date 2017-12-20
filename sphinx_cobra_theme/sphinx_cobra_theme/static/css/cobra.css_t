@@ -5538,7 +5538,7 @@ div[class^='highlight'] pre {
     margin-bottom: 0.809em;
     z-index: 200;
     background-color: #2980B9;
-    text-align: left;
+    text-align: center;
     padding: 0.809em;
     display: block;
     margin-bottom: 0.809em
@@ -5575,6 +5575,7 @@ div[class^='highlight'] pre {
     border-radius: 0;
     max-width: 100%;
     background: transparent
+    text-align: left !important;
 }
 
 .wy-side-nav-search>a.icon img.logo,
@@ -6723,4 +6724,8 @@ blockquote {
 
 .easy-autocomplete a {
     display: inline;
+}
+
+.easy-autocomplete-container ul li div {
+    text-align: left;
 }
