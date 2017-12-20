@@ -27,7 +27,7 @@
     	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<a href='{{ pathto('search') }}?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='{{ pathto('_static', 1) }}/../" + item.website_url + "' ><img src='{{ pathto('_static/link.svg', 1) }}'/></a>";
+                return "<span><a href='{{ pathto('search') }}?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='{{ pathto('_static', 1) }}/../" + item.website_url + "' ><img src='{{ pathto('_static/link.png', 1) }}'/></a></span>";
 		    }
 	    },
 
