@@ -22,6 +22,26 @@
   {% if favicon %}
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
   {% endif %}
+  {% if favicon_apple_touch %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ pathto('_static/' + favicon_apple_touch, 1) }}">
+  {% endif %}
+  {% if favicon32x32 %}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ pathto('_static/' + favicon32x32, 1) }}">
+  {% endif %}
+  {% if favicon16x16 %}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/' + favicon16x16, 1) }}">
+  {% endif %}
+  {% if favicon_safari_pinned_tab %}
+    <link rel="mask-icon" href="{{ pathto('_static/' + favicon_safari_pinned_tab, 1) }}" color="#5bbad5">
+  {% endif %}
+  {% if manifest %}
+    <link rel="manifest" href="{{ pathto('_static/' + manifest, 1) }}">
+  {% endif %}
+  {% if browserconfig %}
+    <meta name="msapplication-config" content="{{ pathto('_static/' + browserconfig, 1) }}">
+  {% endif %}
+  <meta name="theme-color" content="#ffffff">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
