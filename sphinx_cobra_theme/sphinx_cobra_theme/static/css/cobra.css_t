@@ -6585,23 +6585,15 @@ blockquote {
 .tutorialSectionBox .sectionContent {
 }
 
-
-.styled-select select {
-   width: 100%;
-   text-overflow: ellipsis;
-   border-radius: 50px;
-   -webkit-appearance: none;
+.sectionContent .toctree-wrapper .toctree-l1 {
+    list-style:none;
 }
 
-.styled-select {
-   overflow: hidden;
+.sectionContent .toctree-wrapper .toctree-l1 .reference {
+    display:none;
 }
 
-
-.sectionContent .toctree-wrapper .toctree-l1 li {
-    //list-style:none;
+.sectionContent .toctree-wrapper .toctree-l1 .toctree-l2 .reference {
+    display:block;
 }
 
-.sectionContent .toctree-wrapper .toctree-l1 li a {
-    //display:none;
-}
