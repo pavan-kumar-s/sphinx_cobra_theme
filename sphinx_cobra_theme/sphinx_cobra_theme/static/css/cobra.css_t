@@ -1,4 +1,4 @@
-@import url("https://cdn.rawgit.com/vtimbuc/metro-mega-menu/master/menu/css/metro.css");
+@import url("https://cdn.rawgit.com/uni-lu/metro-mega-menu/master/menu/css/metro.css");
 
 ul.metro li.color_class1 a.tile { background-color: #C64127; border-radius: 50%; width: 110px; height: 110px;} /*#E07152*/
 ul.metro li.color_class2 a.tile { background-color: #2B5E89; border-radius: 50%; width: 110px; height: 110px;} /*#B5C172*/
@@ -6568,8 +6568,45 @@ blockquote {
 
 .tutorialSectionBox {
     margin-top: 2em;
-    border: #3c5a86 1px solid;
-    border-radius: 4px;
+    border: #DE5253 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.analysis {
+    border: #DE5253 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.base {
+    border: #6D6E70 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.dataIntegration {
+    border: #86BD59 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.design {
+    border: #F6CF47 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.reconstruction {
+    border: #934090 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+
+.visualization {
+    border: #856B35 1px solid;
+    border-right: none;
+    border-bottom: none;
 }
 
 .tutorialSectionBox .sectionTitle h3 {
@@ -6582,6 +6619,15 @@ blockquote {
     padding-right: 0.5em;
 }
 
+.tutorialSectionBox .sectionLogo {
+    position: relative;
+    top: -1.9em;
+    margin-left: 1em;
+    display: inline;
+    background-color: white;
+    float:right;
+    line-height: 50px;
+}
 .tutorialSectionBox .sectionContent {
 }
 
@@ -6595,5 +6641,23 @@ blockquote {
 
 .sectionContent .toctree-wrapper .toctree-l1 .toctree-l2 .reference {
     display:block;
+}
+
+.sectionLogo .avatar {
+    height: 60px;
+    width: 60px;
+    margin: 0px;
+}
+
+.dropdown-scrollable {
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.dropdown-cobra {
+    width: 50%;
+    text-align: right;
+    float: right;
 }
 
