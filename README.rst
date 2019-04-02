@@ -6,10 +6,7 @@
 Cobra Sphinx Theme
 ******************
 
-.. contents:: 
-
-.. image:: screen_mobile.png
-    :width: 100%
+.. contents::
 
 Installation
 ============
