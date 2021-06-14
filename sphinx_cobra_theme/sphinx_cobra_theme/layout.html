@@ -124,11 +124,12 @@
             <a href="{{ pathto('index') }}" class="icon icon-home"> {{ project }}
           {% endif %}
 
-          {% if logo %}
-            {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
+          {% if project_logo_url %}
+            <img src="{{ project_logo_url }}" class="logo" alt="{{ project_logo_alt_text }}" />
           {% endif %}
           </a>
+
+              
           <h1>{{ project }}</h1>
 
           {% if theme_display_version %}
