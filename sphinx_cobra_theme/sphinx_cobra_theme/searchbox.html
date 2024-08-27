@@ -23,11 +23,10 @@
 			    enabled: true
 		    }
 		},
-
-    	template: {
+	template: {
 	    	type: "custom",
 		    method: function(value, item) {
-                return "<span><a href='{{ pathto('search') }}?q=" + item.name + "&check_keywords=yes&area=default'>" + value + "</a>" + "<a href='{{ pathto('_static', 1) }}/../" + item.website_url + "' ><img src='{{ pathto('_static/link.svg', 1) }}'/></a></span>";
+                return "<span><a href='_static/../" + item.website_url + "' >" + value + "</a>" + "<a href='_static/../" + item.website_url + "' ><img src='_static/link.svg'/></a></span>";
 		    }
 	    },
 
